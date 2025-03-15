@@ -1,0 +1,31 @@
+﻿version: '3.4'
+
+services:
+  chat:
+    image: ${DOCKER_REGISTRY-}chat
+    build:
+      context: .
+      dockerfile: Chat/Dockerfile
+    ports:
+      - "5000:8080"  
+      - "5001:8081"  
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080;https://+:8081  
+      - ConnectionStrings__Redis=chat.redis:6379  
+    networks:
+      - chat-net
+    depends_on:
+      - chat.redis
+
+  chat.redis:
+    image: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - chat-net
+
+networks:
+  chat-net:
+    driver: bridge

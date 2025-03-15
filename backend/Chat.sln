@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34902.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chat", "Chat\Chat.csproj", "{10B0C737-D59E-4B89-9303-860CD47E3CCB}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7D743396-54C2-4C89-92F8-2792E421974A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10B0C737-D59E-4B89-9303-860CD47E3CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B0C737-D59E-4B89-9303-860CD47E3CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B0C737-D59E-4B89-9303-860CD47E3CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10B0C737-D59E-4B89-9303-860CD47E3CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D743396-54C2-4C89-92F8-2792E421974A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D743396-54C2-4C89-92F8-2792E421974A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D743396-54C2-4C89-92F8-2792E421974A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D743396-54C2-4C89-92F8-2792E421974A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5266D2A-C085-4B5D-BFEF-1269D934C98F}
+	EndGlobalSection
+EndGlobal
