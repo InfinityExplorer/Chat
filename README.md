@@ -10,7 +10,7 @@
 ## 🛠 Технологии
 
 **Бэкенд:**
-- ASP.NET Core 7.0
+- ASP.NET Core 8.0
 - SignalR
 - Redis (для масштабирования SignalR Backplane)
 
